@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="250.0" stylesheets="@../../../../../values/style.CSS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="638.0" prefWidth="344.0" styleClass="right-bar" stylesheets="@../../../../../values/style.CSS" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="74.0" prefWidth="300.0" stylesheets="@../../../../../values/style.CSS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="98.0" prefWidth="558.0" text="Market Fruits" textAlignment="CENTER" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="276.0" stylesheets="@../../../../../values/style.CSS">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField prefHeight="30.0" prefWidth="200.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../../../../../values/style.CSS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="search-button" stylesheets="@../../../../../values/style.CSS" text="search" textFill="WHITE" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="400.0" prefWidth="274.0" styleClass="chosen-fruit-card" stylesheets="@../../../../../values/style.CSS">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="52.0" prefWidth="243.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="130.0" text="Peach" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="52.0" prefWidth="114.0" text="\$3.99" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../img/peach.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="243.0">
+                           <children>
+                              <Label prefHeight="51.0" prefWidth="109.0" text="Kg" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="44.0" prefWidth="131.0" promptText="1" styleClass="comboBox" stylesheets="@../../../../../values/style.CSS" />
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" prefHeight="98.0" prefWidth="206.0" styleClass="add-btn" stylesheets="@../../../../../values/style.CSS" text="Add to cart" textFill="#828282">
+                           <VBox.margin>
+                              <Insets bottom="60.0" top="60.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
